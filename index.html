@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wycliffe Kamba | Data Analyst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #f5f7fa;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to right, #373B44, #4286f4);
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      border-bottom: 2px solid #e0e0e0;
+    }
+    nav a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #4286f4;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #373B44;
+      border-left: 5px solid #4286f4;
+      padding-left: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .bar-chart-container {
+      max-width: 700px;
+      margin: 2rem auto;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .card {
+      background: #ffffff;
+      border-left: 6px solid #4286f4;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      cursor: pointer;
+    }
+    .card .details {
+      margin-top: 1rem;
+      color: #444;
+    }
+    footer {
+      background-color: #373B44;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    .contact {
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    .contact a {
+      color: #4286f4;
+      display: block;
+      margin: 0.5rem 0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Wycliffe Kamba</h1>
+  <p>Data Analyst | From Raw Data to Actionable Insights</p>
+</header>
+
+<nav>
+  <a href="#about">Home</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Toolkit</a>
+  <a href="#blog">Blog</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>Hello, I'm Wycliffe...</h2>
+  <p>I’m a Data Analyst passionate about solving people-centered problems. I love turning messy data into meaningful insights using Python, SQL, Tableau, and Excel.</p>
+  <p>I’m currently studying Data Science at the Open University of Kenya and have experience in building systems like POS dashboards and agricultural resource modules. My journey into data began with a desire to make an impact through numbers and every project I touch brings me closer to that mission.</p>
+</section>
+
+<section id="process">
+  <h2>Bringing Data to Life</h2>
+  <div class="card">
+    <strong>01. Data Collection</strong><br/>From surveys, spreadsheets, or APIs, I ensure the data foundation is solid.
+  </div>
+  <div class="card">
+    <strong>02. Data Cleaning & Preparation</strong><br/>I organize, refine, and validate data for smooth analysis.
+  </div>
+  <div class="card">
+    <strong>03. Data Analysis & Modeling</strong><br/>I explore trends and build models to uncover insights.
+  </div>
+  <div class="card">
+    <strong>04. Data Visualization & Reporting</strong><br/>I create dashboards and visuals that tell compelling stories.
+  </div>
+</section>
+
+<section id="skills">
+  <h2>My Data Toolkit</h2>
+  <div class="bar-chart-container">
+    <canvas id="skillsChart"></canvas>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>My Data Playground</h2>
+
+  <div class="card" onclick="toggleDetails(this)">
+    <strong>
+      POS Dashboard (2023)
+      <span style="float: right;">🔽</span>
+    </strong>
+    <div class="details" style="display: none;">
+      <p>• Developed analytics features for real-time sales tracking and inventory analysis.</p>
+      <p>• Analyzed transaction data using SQL, enabling better demand forecasting.</p>
+      <p>• Generated visual reports to support strategic business decisions.</p>
+      <!-- <a href="https://github.com/wycliffe254" target="_blank">View on GitHub</a> -->
+    </div>
+  </div>
+
+  <div class="card" onclick="toggleDetails(this)">
+    <strong>
+      Agricultural Management System
+      <span style="float: right;">🔽</span>
+    </strong>
+    <div class="details" style="display: none;">
+      <p>• Built a SQL-based resource management module to optimize agricultural inputs.</p>
+      <p>• Performed trend analysis using Python and SQL, improving allocation by 20%.</p>
+      <p>• Shared visual insights with stakeholders for better decision-making.</p>
+    <!-- <a href="https://github.com/wycliffe254" target="_blank">View on GitHub</a> -->
+    </div>
+  </div>
+
+  <div class="card" onclick="toggleDetails(this)">
+    <strong>
+      Sales Analysis Project
+      <span style="float: right;">🔽</span>
+    </strong>
+    <div class="details" style="display: none;">
+      <p>• Performed EDA using Python to uncover pricing sensitivities and seasonal patterns.</p>
+      <p>• Utilized Pandas, NumPy, and Matplotlib for data exploration and visualization.</p>
+      <p>• Delivered insights that improved forecasting accuracy and revenue decisions.</p>
+      <!-- <a href="https://github.com/wycliffe254" target="_blank">View on GitHub</a> -->
+    </div>
+  </div>
+</section>
+
+<section id="blog">
+  <h2>Beyond the Numbers</h2>
+  <p><strong>How I Ended Up in Data Analytics</strong></p>
+  <p>Back in 2020, I worked at my father's business in OTC, Nairobi, juggling sales and inventory. My days revolved around piles of receipts and endless paperwork. Amid the chaos, I kept asking myself: "Why isn’t this automated? We live in a digital world!" That simple frustration planted a seed that would eventually grow into a passion.</p>
+  <p>Fueled by curiosity, I enrolled in a full-stack software development course. It was an incredible experience one that stretched me through a range of projects, from simple applications to more complex systems. For my final school project, I built a full-fledged Point of Sale system called <em>MyDuka</em> a real-time solution that tackled the exact inefficiencies I once faced, from sales tracking to automated receipts.</p>
+  <p>Still, something felt missing. It wasn’t until I stumbled on a video by @OBONGO O. about a Business Intelligence apprenticeship at @UADSL that everything clicked. I realized that my true calling wasn’t in just building tools it was in analyzing the data they produced. I craved the process of exploring trends, making predictions, and turning raw numbers into business insights.</p>
+  <p>So, I pivoted. I joined the Business Intelligence Analysis program and it’s been an exciting ride ever since. I may not be at the top yet, but every step brings me closer. I've discovered I'm resilient, enthusiastic, and proactive. I love learning from others too what have you discovered about yourself?</p>
+  <p>Let’s connect and grow together.</p>
+</section>
+
+<section id="contact">
+  <h2>Let's Talk</h2>
+  <div class="contact">
+    <p>Email: <a href="mailto:wycliffekamba81@gmail.com">wycliffekamba81@gmail.com</a></p>
+    <p>Phone: <a href="tel:+254742471585">+254 742 471 585</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/wycliffe-njuguna-79018b29a/" target="_blank">Wycliffe Njuguna</a></p>
+    <p>GitHub: <a href="https://github.com/wycliffe254" target="_blank">wycliffe254</a></p>
+
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Wycliffe Kamba | Data Analyst
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('skillsChart').getContext('2d');
+
+  const initialData = [75, 60, 70, 90, 65];
+  const updatedData = [80, 65, 75, 95, 70];
+
+  const chart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Python', 'SQL', 'Power BI', 'Excel', 'Tableau'],
+      datasets: [{
+        label: 'Proficiency',
+        data: initialData,
+        backgroundColor: ['#4286f4', '#6fa8dc', '#3d85c6', '#73a1f2', '#a2c4f7'],
+        borderRadius: 8,
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      animation: {
+        duration: 2000,
+        easing: 'easeOutBounce'
+      },
+      scales: {
+        x: {
+          display: false
+        },
+        y: {
+          grid: { display: false },
+          ticks: {
+            font: {
+              size: 14
+            }
+          }
+        }
+      },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: '#333',
+          titleFont: { weight: 'bold' },
+          bodyColor: '#fff'
+        }
+      }
+    }
+  });
+
+  // Simulate data update
+  setTimeout(() => {
+    chart.data.datasets[0].data = updatedData;
+    chart.update();
+  }, 4000);
+
+  function toggleDetails(card) {
+    const details = card.querySelector('.details');
+    details.style.display = details.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
+
+</body>
+</html>
